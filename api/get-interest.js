@@ -1,7 +1,5 @@
 export default async function handler(req, res) {
-    const {
-        query: { capital, plazo }
-    } = req
-
+    await sleep(5000);  
+    
     res.send(Math.random()*30);
 }
